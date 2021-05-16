@@ -653,3 +653,14 @@ body {
   margin-right: 10px;
   margin-left: 10px;
 }
+#result-count{
+  font-size: 400% !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+#result-container{
+  width: 600px !important;
+  height: 50% !important;
+  padding: 100px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
