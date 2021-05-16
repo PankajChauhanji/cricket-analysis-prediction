@@ -22,8 +22,12 @@ def predict():
         
         batting_team = request.form['batting-team']
         bowling_team = request.form['bowling-team']
+        team_array = ['CSK', 'DD', 'KXP', 'KKR', 'MI', 'RR', 'RCB', 'SRH']
+        temp_array = [ 1 if batting_team == team_array[i] else 0 for i in range(len(team_array))]
+        print(temp_array)
 
-        temp_array += get_teams_array(batting_team) + get_teams_array(bowling_team)
+        temp_array += [ 1 if bowling_team == team_array[i] else 0 for i in range(len(team_array))]
+        print('now', temp_array)
             
         overs = float(request.form['overs'])
         runs = int(request.form['runs'])
