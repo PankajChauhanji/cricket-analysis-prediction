@@ -152,7 +152,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 25px;
   background: #a64bf4;
   background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
   background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
@@ -162,12 +162,12 @@ iframe {
 }
 
 .wrap-contact100 {
-  width: 80%;
+  width: 70%;
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
   padding: 42px 55px 4px 55px;
-  margin-top: 70px;
+  margin: 70px auto;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 .wrap-contact100:hover{
@@ -188,9 +188,9 @@ iframe {
 /*------------------------------------------------------------------
 [ Form ]*/
 
-.contact100-form {
-  width: 100%;
-}
+/* .contact100-form {
+  width: 90%;
+} */
 
 .contact100-form-title {
   display: block;
@@ -297,10 +297,11 @@ textarea.input100 {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 13px;
+  margin: 0 auto;
 }
 
 .wrap-contact100-form-btn {
-  width: 100%;
+  width: 80%;
   display: block;
   position: relative;
   z-index: 1;
@@ -675,4 +676,16 @@ body {
 }
 .analysis-image:hover{
   transform: scale(1.1);
+}
+
+.predict-container{
+  margin: 0 auto !important;
+}
+.analysis-heading{
+  width: 90% !important;
+  /* height: 20% !important; */
+  padding: 2%;
+  margin: 2% auto;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }

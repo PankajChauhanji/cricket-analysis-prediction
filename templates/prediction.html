@@ -2,7 +2,7 @@
 
 {% block body %}
 
-<div class="container-contact100">
+<div class = "predict-container">
     <form class="contact100-form validate-form" action="{{ url_for('predict') }}" method="POST">
         <div class="wrap-contact100">
             <span class="contact100-form-title">
@@ -47,14 +47,14 @@
                 <div>
                     <select class="selection-2" name="venue">
                         <option value="none">Select a Venue</option>
-                        <option value="Mumbai"></option>
-                        <option value="Kolkata">Kolkata Knight Riders</option>
-                        <option value="Chennai">Chennai Super Kings</option>
-                        <option value="Jaipur">Rajasthan Royals</option>
-                        <option value="Mohali">Kings XI Punjab</option>
-                        <option value="Bangalore">Royal Challengers Bangalore</option>
-                        <option value="Delhi">Delhi Daredevils</option>
-                        <option value="Hyderabad">Sunrisers Hyderabad</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Mohali">Mohali</option>
+                        <option value="Bangalore">Banglore</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Hyderabad">Hyderabad</option>
                     </select>
                 </div>
                 <span class="focus-input100"></span>
@@ -102,4 +102,5 @@
         </div>
     </form>
 </div>
+<div id="dropDownSelect1"></div>
 {% endblock %}

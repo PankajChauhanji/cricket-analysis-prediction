@@ -6,20 +6,18 @@
     <div class="container-fluid">
         <div class="px-lg-5">
 
-          <div class="row py-5">
-            <div class="col-lg-12 mx-auto">
-              <div class="text-white p-5 shadow-sm rounded banner">
-                <h1 class="display-4">Cricket Score Predictions</h1>
-                <p style="color: white;">Detailed performance data, cutting-edge analytics, and 
-                    synchronised match footage to enhance performance analysis and player 
-                    recruitment across all forms of cricket..</p>
-              </div>
+            <div class="analysis-heading text-white p-5 shadow-sm rounded banner">
+            <h1 class="display-4"> Cricket Data Analysis </h1>
+
+            <p style="color: white; font-size: 130%;">Detailed performance data, cutting-edge analytics, and 
+                synchronised match footage to enhance performance analysis and player 
+                recruitment across all forms of cricket..</p>
             </div>
-          </div>
           <!-- End -->
       
           <div class="row">
             <!-- Gallery item -->
+            {% for i in range(0, 12) %}
               <div class="bg-white rounded shadow-sm analysis-image">
                 <img class="img-fluid" style = "width: 200%;" src = "{{ base_url }}plots/breast_cancer_data/pairplot/features/worst concave points,worst radius" alt="This is first Image">
                 <div class="p-4">
@@ -27,38 +25,7 @@
                   <p class="small text-muted mb-0">Descriptions</p>
                 </div>
             </div>
-
-            <div class="bg-white rounded shadow-sm analysis-image">
-                <img class="img-fluid" style = "width: 200%;" src = "{{ base_url }}plots/breast_cancer_data/pairplot/features/worst concave points,worst radius" alt="This is first Image">
-                <div class="p-4">
-                  <h5>Title</h5>
-                  <p class="small text-muted mb-0">Descriptions</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded shadow-sm analysis-image">
-                <img class="img-fluid" style = "width: 200%;" src = "{{ base_url }}plots/breast_cancer_data/pairplot/features/worst concave points,worst radius" alt="This is first Image">
-                <div class="p-4">
-                  <h5>Title</h5>
-                  <p class="small text-muted mb-0">Descriptions</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded shadow-sm analysis-image">
-                <img class="img-fluid" style = "width: 200%;" src = "{{ base_url }}plots/breast_cancer_data/pairplot/features/worst concave points,worst radius" alt="This is first Image">
-                <div class="p-4">
-                  <h5>Title</h5>
-                  <p class="small text-muted mb-0">Descriptions</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded shadow-sm analysis-image">
-                <img class="img-fluid" style = "width: 200%;" src = "{{ base_url }}plots/breast_cancer_data/pairplot/features/worst concave points,worst radius" alt="This is first Image">
-                <div class="p-4">
-                  <h5>Title</h5>
-                  <p class="small text-muted mb-0">Descriptions</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
