@@ -2,19 +2,22 @@
 
 {% block body %}
 <div >
-    <div id="result-container" style="width: 1000px !important;
-    height: 30% !important;
-    padding: 100px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;">
+    <div id="result-container" >
         <span class="contact100-form-title">
-            Predict Final Score <br> Indian Premier League (IPL)
+            Predict Final Score <br> Indian Premier League <br>(IPL)
         </span>
         <div id="result-count">
-            <div style="font-size: 300% !important;
-            font-weight: bold !important;
-            text-align: center !important;">
-                The final predicted score (range): {{ lower_limit }} to {{ upper_limit }}
-            </div>
+            <h1>
+            {% if lower_limit > 1000 %}
+                    <div>
+                        Final Score can't be predicted as there was error in input Data.
+                    </div>
+            {% else %}
+                    <div>
+                        The final predicted score (range): {{ lower_limit }} to {{ upper_limit }}
+                    </div>
+            {% endif %}
+        </h1>
         </div>
     </div>
     
