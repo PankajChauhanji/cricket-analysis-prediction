@@ -664,3 +664,14 @@ body {
   padding: 100px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
+
+.analysis-image{
+  width: 30%;
+  margin: 30px 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border: 1px solid rgba(54, 49, 49, 0.1);
+  border-radius: 10px;
+}
+.analysis-image:hover{
+  transform: scale(1.1);
+}
