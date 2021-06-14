@@ -21,7 +21,9 @@ def home():
 #To handle prediction page.
 @app.route('/prediction')
 def prediction():
-    return render_template('prediction.html')
+    venues = get_venues()
+    teams = get_teams()
+    return render_template('prediction.html', venues = venues, teams = teams)
 
 @app.route('/predict', methods=['POST'])
 def predict():

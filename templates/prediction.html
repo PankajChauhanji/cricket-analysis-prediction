@@ -12,15 +12,12 @@
                 <span class="label-input100">Batting Team</span>
                 <div>
                     <select class="selection-2" name="batting-team">
-                        <option value="none">Select a Batting team</option>
-                        <option value="MI">Mumbai Indians</option>
-                        <option value="DD">Delhi Daredevils</option>
-                        <option value="CSK">Chennai Super Kings</option>
-                        <option value="RCB">Royal Challengers Bangalore</option>
-                        <option value="KKR">Kolkata Knight Riders</option>
-                        <option value="RR">Rajasthan Royals</option>
-                        <option value="KXP">Kings XI Punjab</option>
-                        <option value="SRH">Sunrisers Hyderabad</option>
+                        <option value="none">Select a Batting teams</option>
+
+                        {% for keys, values in teams.items() %}
+                            <option value="{{keys}}">{{values}}</option>
+                        {% endfor %}
+                        
                     </select>
                 </div>
                 <span class="focus-input100"></span>
@@ -29,15 +26,12 @@
                 <span class="label-input100">Bowling Team</span>
                 <div>
                     <select class="selection-2" name="bowling-team">
-                        <option value="none">Select a Bowling team</option>
-                        <option value="MI">Mumbai Indians</option>
-                        <option value="DD">Delhi Daredevils</option>
-                        <option value="CSK">Chennai Super Kings</option>
-                        <option value="RCB">Royal Challengers Bangalore</option>
-                        <option value="KKR">Kolkata Knight Riders</option>
-                        <option value="RR">Rajasthan Royals</option>
-                        <option value="KXP">Kings XI Punjab</option>
-                        <option value="SRH">Sunrisers Hyderabad</option>
+                        <option value="none">Select a Bowling teams</option>
+
+                        {% for keys, values in teams.items() %}
+                            <option value="{{keys}}">{{values}}</option>
+                        {% endfor %}
+
                     </select>
                 </div>
                 <span class="focus-input100"></span>
@@ -47,14 +41,11 @@
                 <div>
                     <select class="selection-2" name="venue">
                         <option value="none">Select a Venue</option>
-                        <option value="Mumbai">Mumbai</option>
-                        <option value="Kolkata">Kolkata</option>
-                        <option value="Chennai">Chennai</option>
-                        <option value="Jaipur">Jaipur</option>
-                        <option value="Mohali">Mohali</option>
-                        <option value="Bangalore">Banglore</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="Hyderabad">Hyderabad</option>
+
+                        {% for keys, values in venues.items() %}
+                            <option value="{{keys}}">{{values}}</option>
+                        {% endfor %}
+
                     </select>
                 </div>
                 <span class="focus-input100"></span>

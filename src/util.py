@@ -30,3 +30,18 @@ def predict_final_score(request):
     regressor = get_regressor()
     final_score = int(regressor.predict(data)[0])
     return final_score
+
+def get_teams():
+    teams = {"MI":  "Mumbai Indians", "DD":  "Delhi Daredevils",
+             "CSK":  "Chennai Super Kings", "RCB":  "Royal Challengers Bangalore",
+             "KKR":  "Kolkata Knight Riders","RR":  "Rajasthan Royals",
+             "KXP":  "Kings XI Punjab", "SRH":  "Sunrisers Hyderabad"}
+    return teams
+
+def get_venues():
+    venues = {"Mumbai":  "Mumbai", "Kolkata":  "Kolkata",
+              "Chennai":  "Chennai", "Jaipur":  "Jaipur",
+              "Mohali":  "Mohali", "Bangalore":  "Banglore",
+              "Delhi":  "Delhi" ,"Hyderabad":  "Hyderabad"}
+    return venues
+
