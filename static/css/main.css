@@ -689,3 +689,33 @@ body {
   border-radius: 20px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
+
+@media screen and (min-width: 768px) {  
+  .custom-collapse .collapse {
+          display:block;
+  }  
+}
+
+.manual-prediction {
+  padding: 10px;
+  font-size: 120% !important;
+  margin: 10px auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+              rgba(17, 17, 26, 0.1) 0px 16px 56px,
+              rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 20px;
+}
+.manual-prediction:hover{
+  transform: scale(1.02);
+  background: #a64bf4;
+  background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -o-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  color: white !important;
+}
