@@ -14,7 +14,7 @@
 #     data = base64.b64encode(buf.getbuffer()).decode("ascii")
 #     return f"<img src='data:image/png;base64,{data}'/>"
 
-
+#this is for plotting example only... No real use with related to project.
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns

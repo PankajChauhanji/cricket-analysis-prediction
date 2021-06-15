@@ -1,5 +1,17 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-	<h1> Hello Welcome To cricket Predictions</h1>
+	<div>
+		<div id="screen">
+			<div id="cube" class='cube'>
+				<!-- cube images -->
+				<img id="1" src="{{ url_for('static', filename='images/dhoni.jpg/')}}" class='face' data-transform="translateZ(-400px)" style="outline:none !important">
+				<img id="2" src="{{ url_for('static', filename='images/dhoni.jpg/')}}" class='face' data-transform="rotateY(90deg) translateZ(-400px)">
+				<img id="3" src="{{ url_for('static', filename='images/sehwag.jpg/')}}"  class='face' data-transform="rotateY(-90deg) translateZ(-400px)">
+				<img id="4" src="{{ url_for('static', filename='images/ground-night.jpg/')}}" class='face' data-transform="rotateY(180deg) translateZ(-400px)">
+				<img id="5" src="{{ url_for('static', filename='images/ball.jpg/')}}" class='face' data-transform="rotateX(90deg) translateZ(-300px)">
+				<img id="6" src="{{ url_for('static', filename='images/ground-dharamshala.jpg/')}}"  class='face' data-transform="rotateX(-90deg) translateZ(-300px)">
+			</div>
+		</div>
+	</div>
 {% endblock %}
