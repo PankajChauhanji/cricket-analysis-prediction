@@ -53,5 +53,16 @@ def pairplot(features):
         # something went wrong to return bad request
         return make_response('Unsupported request, probably feature names are wrong', 400)
 
+
+@app.route('/about')
+def about_page():
+    return render_template('about.html')
+
+
+@app.route('/contact')
+def contact():
+    return render_template('myPage.html')
+
+
 if __name__ == '__main__':
 	app.run(debug=True)

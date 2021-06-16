@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div>
+        <div class="analysis-heading text-white p-5 shadow-sm rounded banner">
+            <h1 class="display-4"> About Our Team </h1>
+
+            <p style="color: white; font-size: 130%;">
+                This project "Cricket Analysis and prediction" is done as a final Semester Project
+                at National Institute of Technology Srinagar
+            </p>
+        </div>
+        <div>
+            <div class="sub-about-container shabir">
+                <div class="about-image">
+                    <img style = "border-radius: 50%;" src="{{url_for('static', filename='images/shabir.png')}}" alt="Dr Shabir Sofi." />
+                </div>
+                <div class="about-content">
+                    <h4>D. Shabir sofi</h4>
+                    <p>
+                        HOD & Assistant Professor, <br>
+                        National Institute of Technology Srinagar <br>
+                        <a href="shabir@nitsri.net">Email ID : shabir@nitsri.net</a>
+                    </p>
+                  </div>
+            </div>
+            <div class="sub-about-container pankaj">
+                <div class="about-image">
+                    <img style = "border-radius: 50%; width: 200px;" src="{{ url_for('static', filename='images/pankaj.png')}}" alt="Dr Shabir Sofi." />
+                </div>
+                <div class="about-content">
+                    <h4>Pankaj Chauhan</h4>
+                    <p>
+                        Final Year Undergraduate<br>
+                        National Institute of Technology Srinagar <br>
+                        <a href="shabir@nitsri.net">Email ID : pankajchauhan.nitsri.gmail.com</a>
+                    </p>
+                  </div>
+            </div>
+            <div class="sub-about-container amit">
+                <div class="about-image">
+                    <img style = "border-radius: 50%;" src="{{ url_for('static', filename='images/shabir.png')}}" alt="Dr Shabir Sofi." />
+                </div>
+                <div class="p-4">
+                    <h4>D. Shabir sofi</h4>
+                    <p class="small text-muted mb-0">
+                        HOD & Assistant Professor, <br>
+                        National Institute of Technology Srinagar <br>
+                        <a href="shabir@nitsri.net">Email ID : shabir@nitsri.net</a>
+                    </p>
+                  </div>
+            </div>
+        </div>
+	</div>
+{% endblock %}

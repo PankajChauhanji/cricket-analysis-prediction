@@ -763,3 +763,29 @@ body {
 .face:hover {
 	outline: rgba(255,255,255,1) solid 10px !important;
 }
+
+.sub-about-container{
+  width: 70% !important;
+  padding: 5%;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+              rgba(17, 17, 26, 0.1) 0px 16px 56px,
+              rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.pankaj{
+  margin-left: 40%;
+}
+.about-image{
+  float: left;
+  margin-left: 10px;
+  border-right: 1px solid white;
+  padding-right: 200px; 
+}
+.about-content{
+  margin-right: 10px;
+  width: 200px;
+  color:white;
+}
