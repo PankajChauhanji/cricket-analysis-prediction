@@ -63,6 +63,35 @@ def about_page():
 def contact():
     return render_template('myPage.html')
 
+@app.route('/match_record_form')
+def match_record_form():
+    teams_name = get_teams()
+    return render_template('match_record_form.html', teams_name = teams_name)
+
+@app.route('/match_record', methods = ["POST"])
+def match_record():
+    if request:
+        df = get_match_record(request.form["team_name"])
+        return render_template('match_record.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
+    else:
+        return render_template('data_analysis.html')
+
+@app.route('/toss_choose_form')
+def toss_choose_form():
+    venue_name = get_all_venues()
+    return render_template('toss_choose_form.html', venue_name = venue_name)
+
+@app.route('/toss_choose', methods = ["POST"])
+def toss_choose():
+    data = get_toss_data(request.form["venue_name"])
+    return render_template('toss_choose.html', data = data)
+
+@app.route('/average_scores')
+def average_scores():
+    df = get_average_scores()
+    return render_template('average_scores.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
+
+
 
 if __name__ == '__main__':
 	app.run(debug=True)

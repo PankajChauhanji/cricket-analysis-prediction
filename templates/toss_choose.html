@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div >
+    <div class="result-other" >
+        <h1 class="contact100-form-title" style="color: white;">
+            Find What To Choose on Toss.
+        </h1>
+        <h4 style="margin: 20px auto; font-style: italic;">{{data["message"]}}</h4>
+        <div>       <div class="result-other-sub"> Match With No Results:  {{data["no_result"]}} </div>
+                    <div class="result-other-sub"> Total Match Played:  {{data["total"]}} </div>
+                    <div class="result-other-sub"> Match Won Batting First:  {{data["bat_win"]}} </div>    
+                    <div class="result-other-sub"> Match Won Fielding First:  {{data["field_win"]}} </div>
+                    <div class="result-other-sub"> Winning % on Choosing Bat First:  {{data["bat_win_percent"]}}% </div>  
+                    <div class="result-other-sub"> Winning % on Choosing Field First:  {{data["field_win_percent"]}}% </div>  
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}

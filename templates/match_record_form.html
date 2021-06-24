@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class = "predict-container">
+    <form class="contact100-form validate-form" action="match_record" method="POST">
+        <div class="wrap-contact100">
+            <span class="contact100-form-title">
+                Get Team Records
+            </span>
+            <div class="wrap-input100 input100-select">
+                <span class="label-input100">Batting Team</span>
+                <div>
+                    <select class="selection-2" name="team_name">
+                        <option value="none">Select a Batting teams</option>
+
+                        {% for keys, values in teams_name.items() %}
+                            <option value="{{keys}}">{{values}}</option>
+                        {% endfor %}
+                        
+                    </select>
+                </div>
+                <span class="focus-input100"></span>
+            </div>
+            
+        <div class="container-contact100-form-btn" id="predict-button">
+            <div class="wrap-contact100-form-btn">
+                <div class="contact100-form-bgbtn"></div>
+                <button class="contact100-form-btn" type="submit">
+                    <span>
+                        Get Match Record.
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    <!-- </form> -->
+</div>
+<div id="dropDownSelect1"></div>
+{% endblock %}

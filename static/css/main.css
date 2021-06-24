@@ -664,6 +664,7 @@ body {
   height: 20% !important;
   padding: 100px;
   margin: 100px auto;
+  color: white !important;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
@@ -698,7 +699,7 @@ body {
 
 .manual-prediction {
   padding: 10px;
-  font-size: 120% !important;
+  font-size: 150% !important;
   margin: 10px auto;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
               rgba(17, 17, 26, 0.1) 0px 16px 56px,
@@ -788,4 +789,49 @@ body {
   margin-right: 10px;
   width: 200px;
   color:white;
+}
+table{
+  border: 2px solid black;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+  rgba(17, 17, 26, 0.1) 0px 16px 56px,
+  rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  width: 95% !important;
+	margin: 50px auto 1em;
+
+}
+th{
+  background-color: #6C7A89;
+  margin: 2px auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+  rgba(17, 17, 26, 0.1) 0px 16px 56px,
+  rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+tr{
+  background-color: white;
+  margin: 2px auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+  rgba(17, 17, 26, 0.1) 0px 16px 56px,
+  rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+td, th{
+  padding: 2px;
+}
+
+.result-other{
+  width: 80% !important;
+  height: 40% !important;
+  padding: 50px;
+  margin: 50px auto;
+  color: white;
+  font-size: 125%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.result-other-sub{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 25px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid white;
 }
