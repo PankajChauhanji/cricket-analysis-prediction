@@ -91,7 +91,18 @@ def average_scores():
     df = get_average_scores()
     return render_template('average_scores.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
 
+@app.route('/player_stats_form')
+def player_stats_form():
+    player_name = get_all_players()
+    return render_template('player_stats_form.html', player_name = player_name)
 
+@app.route('/player_stats', methods = ["POST"])
+def player_stats():
+    if request:
+        df = get_player_stats(request.form["player_name"])
+        return render_template('player_stats.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
+    else:
+        return render_template('data_analysis.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)

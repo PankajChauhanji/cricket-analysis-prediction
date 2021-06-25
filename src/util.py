@@ -58,6 +58,24 @@ def get_all_venues():
     df3.sort()
     return df3
 
+def get_all_players():
+    df = pd.read_csv('static/data/ipl_stats.csv')
+    df1 = df["Player"].unique()
+    df2 = df1.tolist()
+    df3 = []
+    for ele in df2:
+        if type(ele) == str:
+            df3.append(ele)
+    df3.sort()
+    return df3
+
+def get_player_stats(player_name):
+    df = pd.read_csv('static/data/ipl_stats.csv')
+    df1 = df[df["Player"] == player_name]
+    df2 = df1.groupby("Tournament")
+    df3 = df2.first().transpose()
+    return df3
+
 def get_match_record(teams_key):
     df = pd.read_csv('static/data/match.csv')
     if (teams_key != "all"):

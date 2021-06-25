@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+        <div style="margin-top: 50px;" class ="analysis-heading text-white p-5 shadow-sm rounded banner">
+                <h2 class="display-4"> Player Stats</h2>
+        </div>
+            {% for table in tables %}
+                    {{ table|safe }}
+            {% endfor %}
+{% endblock %}

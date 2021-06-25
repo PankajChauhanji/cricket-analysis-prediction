@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class = "predict-container">
+    <form class="contact100-form validate-form" action="player_stats" method="POST">
+        <div class="wrap-contact100">
+            <span class="contact100-form-title">
+                Get Player Stats
+            </span>
+            <div class="wrap-input100 input100-select">
+                <span class="label-input100">Player Name</span>
+                <div>
+                    <select class="selection-2" name="player_name">
+                        <option value="none">Select a Player</option>
+
+                        {% for name in player_name %}
+                            <option value="{{name}}">{{name}}</option>
+                        {% endfor %}
+                        
+                    </select>
+                </div>
+                <span class="focus-input100"></span>
+            </div>
+            
+        <div class="container-contact100-form-btn" id="predict-button">
+            <div class="wrap-contact100-form-btn">
+                <div class="contact100-form-bgbtn"></div>
+                <button class="contact100-form-btn" type="submit">
+                    <span>
+                        Get Player Stats
+                        <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    <!-- </form> -->
+</div>
+<div id="dropDownSelect1"></div>
+{% endblock %}
