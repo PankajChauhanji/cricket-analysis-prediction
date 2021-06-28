@@ -782,13 +782,14 @@ body {
 .about-image{
   float: left;
   margin-left: 10px;
-  border-right: 1px solid white;
-  padding-right: 200px; 
+  padding-right: 50px; 
 }
 .about-content{
   margin-right: 10px;
-  width: 200px;
+  width: 170px;
   color:white;
+  padding-left: 60px;
+  margin-left: 30px;
 }
 table{
   border: 2px solid black;
@@ -834,4 +835,7 @@ td, th{
   margin: 10px auto;
   padding: 10px;
   border: 1px solid white;
+}
+.amit{
+  width: 45%;
 }

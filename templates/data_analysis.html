@@ -29,15 +29,34 @@
 
           <div class="row">
             <!-- Gallery item -->
-            {% for i in range(0, 12) %}
               <div class="bg-white rounded shadow-sm analysis-image">
-                <img class="img-fluid" style = "width: 200%;" src = "{{ base_url }}plots/breast_cancer_data/pairplot/features/worst concave points,worst radius" alt="This is first Image">
-                <div class="p-4">
-                  <h5>Title</h5>
-                  <p class="small text-muted mb-0">Descriptions</p>
-                </div>
+                <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/1.png')}}" alt="Dr Shabir Sofi." />
             </div>
-            {% endfor %}
+            <div class="bg-white rounded shadow-sm analysis-image">
+              <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/2.png')}}" alt="Dr Shabir Sofi." />
+          </div>
+          <div class="bg-white rounded shadow-sm analysis-image">
+            <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/3.png')}}" alt="Dr Shabir Sofi." />
+        </div>
+        <div class="bg-white rounded shadow-sm analysis-image">
+          <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/4.png')}}" alt="Dr Shabir Sofi." />
+      </div>
+      <div class="bg-white rounded shadow-sm analysis-image">
+        <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/5.png')}}" alt="Dr Shabir Sofi." />
+    </div>
+    <div class="bg-white rounded shadow-sm analysis-image">
+      <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/6.png')}}" alt="Dr Shabir Sofi." />
+  </div>
+  <div class="bg-white rounded shadow-sm analysis-image">
+    <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/1.png')}}" alt="Dr Shabir Sofi." />
+</div>
+<div class="bg-white rounded shadow-sm analysis-image">
+  <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/2.png')}}" alt="Dr Shabir Sofi." />
+</div>
+<div class="bg-white rounded shadow-sm analysis-image">
+  <img class="img-fluid" style = "width: 200%;" src="{{url_for('static', filename='images/5.png')}}" alt="Dr Shabir Sofi." />
+</div>
+
         </div>
     </div>
 </div>

@@ -1,55 +1,59 @@
+
+
 {% extends 'layout.html' %}
 
 {% block body %}
-	<div>
-        <div class="analysis-heading text-white p-5 shadow-sm rounded banner">
-            <h1 class="display-4"> About Our Team </h1>
+<div class="analysis-heading text-white p-5 shadow-sm rounded banner">
+    <h1 class="display-4"> Cricket Analysis and Prediction </h1>
+  </div>
+<div class="wrap-contact100">
+    <div>
+        <h4>
+            This project "Cricket Analysis and prediction" is done as a final Semester Project
+            at National Institute of Technology Srinagar
+        </h4>
+        <div style="margin: 50px;">
+        <h2 style="text-align: center;">
+            Problem Solving
+        </h2>
+        <ul>
+            <li><h4> Primary Problem:</h4> </li>
+                <ul>
+                    <li>
+                        <h4>To Analyse and Predict the Cricket final Score.</h4>
+                    </li>
+                </ul>
+            </li>
+            <li><h3> Secondary Problem:</h3> </li>
+                <ul>
+                    <li>
+                        <h4>To Build the platform for Checking Cricket Stats and Visualize all stats.</h4>
+                    </li>
+                    <li> 
+                        <h4>To Find what to choose on Toss.</h4>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </div>
 
-            <p style="color: white; font-size: 130%;">
-                This project "Cricket Analysis and prediction" is done as a final Semester Project
-                at National Institute of Technology Srinagar
-            </p>
+    </div>
+    <div style="margin: 50px;">
+        <h2 style="text-align: center;">
+            Main Objective</h2>
+            <ul>
+                <li>
+                    <h4>The main objective of Cricket Score prediction is to improve team performance, enhance the chances of winning the game and finally predict the result of the Match.</h4>
+                </li>
+                <li><h4>To build The platform for finding cricket stats</h4></li>
+            </ul>
+        </h2>
+    </div>
+        <div class="about-image">
+            <img style="border:2px soild black; width: 80%;" src="/static/images/ground-night.jpg" alt="Cricket.">
         </div>
-        <div>
-            <div class="sub-about-container shabir">
-                <div class="about-image">
-                    <img style = "border-radius: 50%;" src="{{url_for('static', filename='images/shabir.png')}}" alt="Dr Shabir Sofi." />
-                </div>
-                <div class="about-content">
-                    <h4>D. Shabir sofi</h4>
-                    <p>
-                        HOD & Assistant Professor, <br>
-                        National Institute of Technology Srinagar <br>
-                        <a href="shabir@nitsri.net">Email ID : shabir@nitsri.net</a>
-                    </p>
-                  </div>
-            </div>
-            <div class="sub-about-container pankaj">
-                <div class="about-image">
-                    <img style = "border-radius: 50%; width: 200px;" src="{{ url_for('static', filename='images/pankaj.png')}}" alt="Dr Shabir Sofi." />
-                </div>
-                <div class="about-content">
-                    <h4>Pankaj Chauhan</h4>
-                    <p>
-                        Final Year Undergraduate<br>
-                        National Institute of Technology Srinagar <br>
-                        <a href="shabir@nitsri.net">Email ID : pankajchauhan.nitsri.gmail.com</a>
-                    </p>
-                  </div>
-            </div>
-            <div class="sub-about-container amit">
-                <div class="about-image">
-                    <img style = "border-radius: 50%;" src="{{ url_for('static', filename='images/shabir.png')}}" alt="Dr Shabir Sofi." />
-                </div>
-                <div class="p-4">
-                    <h4>D. Shabir sofi</h4>
-                    <p class="small text-muted mb-0">
-                        HOD & Assistant Professor, <br>
-                        National Institute of Technology Srinagar <br>
-                        <a href="shabir@nitsri.net">Email ID : shabir@nitsri.net</a>
-                    </p>
-                  </div>
-            </div>
+        <div style="border-radius: 20px; margin: 200px; text-align: center;"">
+            <h2>Thanks</h2> 
         </div>
-	</div>
+</div>
 {% endblock %}
