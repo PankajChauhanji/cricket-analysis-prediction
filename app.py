@@ -33,7 +33,7 @@ def predict():
 
 # TO handle data analysis Page.
 # get data to keep it in memory, usually you will serve this from a database or bucket, or whereever your db is sitting
-breast_cancer_df, features_names = get_breast_cancer_df()
+# breast_cancer_df, features_names = get_breast_cancer_df()
 
 @app.route('/data_analysis')
 def data_analysis():
